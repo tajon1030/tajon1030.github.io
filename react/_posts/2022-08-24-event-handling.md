@@ -9,7 +9,7 @@ hide_last_modified: true
 
 사용자가 웹 브라우저에서 DOM 요소들과 상호작용 하는것을 이벤트라고 하며,  
 리액트에서 이벤트를 다루는 것은 순수 자바스크립트나 jQuery를 사용하는것과 비슷하다.
-또한 클래스형 컴포넌트에서 할 수 있는 대부분의 작업은 함수형 컴포넌트로도 구현 가능하다.
+
 
 ## 리액트에서 이벤트를 사용할때 주의사항
 1. 이벤트 이름은 소문자 대신 카멜 표기법으로 작성 (`onclick` -> `onClick`)
@@ -105,7 +105,7 @@ class EventPractice extends Component{
 ~~~
 
 ### input 여러 개 다루기  
-input값이 여러개일 경우에는 event객체를 활용한다. (e.target.name값 사용)
+input값이 여러개일 경우에는 event객체를 활용한다. (e.target.name값 사용)  
 객체 안에서 key를 []로 감싸면 그 안에 넣은 레퍼런스가 가리키는 실제 값이 key값으로 사용된다.
 
 ~~~js  
