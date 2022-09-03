@@ -33,9 +33,8 @@ hide_last_modified: true
 3. `render` : 렌더링 시 실행  
 this.props와 this.state에 접근할수 있으며, 리액트 요소를 반환한다.  
 이벤트 설정이 아닌곳에서 setState를 사용하면 안되며, 브라우저 DOM에 접근해도 안된다는점에 주의한다.  
--> state변화를 주거나 DOM 정보 가져올때 componentDidMount에서 처리해야한다.  
 4. `componentDidMount` : mount 후(첫 렌더링을 다 마친 후) 호출  
-여기서 다른 js라이브러리 또는 프레임워크 함수 호출, 이벤트등록, setTimeout, setInterval, 네트워크 요청같은 비동기 작업을 처리한다.  
+DOM에 접근할 수 있기때문에  여기서 다른 js라이브러리 또는 프레임워크 함수 호출, 이벤트등록, setTimeout, setInterval, 네트워크 요청같은 비동기 작업을 처리한다.  
 
 
 ### 업데이트 (update)할 때 호출되는 메서드  
@@ -44,7 +43,7 @@ this.props와 this.state에 접근할수 있으며, 리액트 요소를 반환�
 3. `render`  
 4. `getSnapshotBeforeUpdate` : 업데이트 바로직전 호출하는 메서드  
 이 메서드에서 반환하는값은 componentDidUpdate에서 세번째 파라미터인 snapshot값으로 전달할수있으며,  
-스크롤바 위치 유지처럼 업데이트 직전값을 참고할일이 있을때 활용  
+스크롤바 위치 유지처럼 업데이트 직전값을 참고할일이 있을 때 활용  
 5. `componentDidUpdate` : 업데이트 후 호출  
 DOM 관련 처리를 해도 무방  
 
