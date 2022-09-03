@@ -51,10 +51,10 @@ DOM 관련 처리를 해도 무방
 
 ### 언마운트 (unmount) 할 때 호출되는 메서드
 1. `componentWillUnmount` : 컴포넌트가 브라우저상에서 사라지기 전에 호출  
-componentDidMount에서 등록한 이벤트,타이머 직접생성한 DOM이 있다면 여기서 제거
+componentDidMount에서 등록한 이벤트, 타이머, 직접생성한 DOM이 있다면 여기서 제거
 
-### componentDidCatch 메서드
-렌더링 도중에 에러가 발생했을때 오류 UI를 보여줄 수 있게 해준다.  
+### Error  
+`componentDidCatch 메서드` : 렌더링 도중에 에러가 발생했을때 오류 UI를 보여줄 수 있게 해준다.  
 컴포넌트 자신에게 발생하는 에러는 잡을 수 없고,  
 자신의 this.props.children으로 전달되는 컴포넌트에서 발생하는 에러만 잡아낼 수 있다.  
 
@@ -198,3 +198,5 @@ export default ErrorBoundary;
 ~~~
 ## 참고
 [리액트를 다루는 기술](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791160508796)
+
+[react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
