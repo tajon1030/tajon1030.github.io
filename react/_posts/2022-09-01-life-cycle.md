@@ -29,7 +29,6 @@ hide_last_modified: true
 
 ### 마운트 (mount)할 때 호출되는 메서드  
 1. `constructor` : 컴포넌트 생성자 메서드  
-초기 state를 정할 수 있다.  
 2. `getDerivedStateFromProps` : props값을 state에 넣을때 사용  
 3. `render` : 렌더링 시 실행  
 this.props와 this.state에 접근할수 있으며, 리액트 요소를 반환한다.  
