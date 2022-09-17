@@ -358,8 +358,9 @@ padding: 1rem;
 
 #### 반응형 디자인
 브라우저 가로크기에 따라 다른 스타일을 적용하기 위해서는  
-일반 CSS를 사용할때와 똑같이 media쿼리를 사용한다.
-실제로는 다른파일로 모듈화한 뒤 여기저기서 불러와 사용하는 방식이 편할것이다.
+일반 CSS를 사용할때와 똑같이 media쿼리를 사용한다.  
+작업을 여러 컴포넌트에서 반복해야 한다면 작업을 함수화하여 간편하게 사용 가능하다.
+
 ~~~js
 const Box = styled.div`
   /* props로 넣어 준 값을 직접 전달해 줄 수 있습니다. */
@@ -383,9 +384,6 @@ const Box = styled.div`
 import React from 'react';
 import styled, { css } from 'styled-components';
  
-// 일반 CSS에서 할 때랑 큰 차이가 없다. 
-// 작업을 여러 컴포넌트에서 반복해야 한다면 작업을 함수화하여 간편하게 사용 가능
-// 아래는 styled-components 매뉴얼에서 제공하는 유틸 함수를 따라 만든 코드
 const sizes = {
   desktop: 1024,
   tablet: 768
