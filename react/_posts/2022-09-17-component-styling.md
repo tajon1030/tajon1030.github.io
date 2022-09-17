@@ -352,6 +352,9 @@ padding: 1rem;
 
 #### props에 따른 조건부 스타일링
 조건부 스타일링을 간단하게 props로 처리할수있다.
+~~~html
+<Button inverted={true}>테두리만</Button>
+~~~
 
 #### 반응형 디자인
 브라우저 가로크기에 따라 다른 스타일을 적용하기 위해서는  
