@@ -6,7 +6,7 @@ hide_last_modified: true
 ---
 ## 리액트로 TodoList 만들기
 
-![800x400](../../assets/img/blog/todo-react.png)
+![800x400](../../assets/img/blog/react-todolist.jpg)
 
 todoList를 만들어보았다.
 
